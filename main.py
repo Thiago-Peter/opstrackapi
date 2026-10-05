@@ -17,8 +17,8 @@ def help():
 @app.route("/users")
 def users():
     return [
-        {"email": "email.com", "nome": "tavi"},
-        {"email": "email.com", "nome": "ana"},
+        {"email": "tpstoy1@gmail.com", "nome": "Thiago"},
+        {"email": "gustavopatrocinio25@gmail.com", "nome": "Gustavo"},
     ]
 
 
@@ -30,8 +30,14 @@ def sobre():
 @app.route("/equipe")
 def equipe():
     return [
-        {"emailProfissional": "@indis...sp.gov.br", "nome": "Paulo"},
-        {"emailProfissional": "...", "nome": "Ana"},
+        {
+            "emailProfissional": "tpstoy1@gmail.com",
+            "nome": "Thiago",
+        },
+        {
+            "emailProfissional": "gustavopatrocinio25@gmail.com",
+            "nome": "Gustavo",
+        },
     ]
 
 

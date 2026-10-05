@@ -1,26 +1,39 @@
 from flask import Flask
+
+
 app = Flask(__name__)
+
+
 @app.route("/")
-def projetoOtavio():
-   return {"Servico": "OpsTrackAPI", "Status": "ONLINE"}
-#teste
+def projeto():
+    return {"Serviço": "OpsTrack", "status": "ONLINE"}
+
+
 @app.route("/help")
 def help():
-   return "Pagina destinada a ajuda do user"
+    return "Página destinada a ajuda do user"
+
 
 @app.route("/users")
 def users():
-   return [{"email": "t@gmail.com", "nome": "tavi"},
-            {"email": "a@gmail.com", "nome": "ana"}]
+    return [
+        {"email": "email.com", "nome": "tavi"},
+        {"email": "email.com", "nome": "ana"},
+    ]
+
 
 @app.route("/sobre")
 def sobre():
-   return "Projeto de exemplo, aula entrega continua"
+    return "Projeto de exemplo, aula entrega contínua"
+
 
 @app.route("/equipe")
 def equipe():
-   return [{"emailProfissional": "t@indaiatuba.sp.gov.br", "nome": "Paulo"},
-            {"emailProfissional": "a@indaiatuba.sp.gov.br", "nome": "Ana"}]
+    return [
+        {"emailProfissional": "@indis...sp.gov.br", "nome": "Paulo"},
+        {"emailProfissional": "...", "nome": "Ana"},
+    ]
+
 
 if __name__ == "__main__":
-   app.run(debug=True)
+    app.run(debug=True)
